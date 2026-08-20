@@ -147,7 +147,7 @@ VacationPy filtered the collected cities according to preferred weather conditio
 
 The final interactive map displays qualifying cities and their nearby hotels. Marker size represents humidity, and the hover information includes the city, country, humidity, and hotel name.
 
-[View or download the interactive vacation map](output_data/vacation_map.html)
+[View or download the interactive vacation map](output_data/Vacation_map.html)
 
 > The map requires an internet connection to load OpenStreetMap tiles.
 
