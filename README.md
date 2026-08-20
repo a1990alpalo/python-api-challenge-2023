@@ -125,11 +125,44 @@ GEOAPIFY_API_KEY=your_geoapify_key
 * [x] Northern and Southern Hemisphere separation
 * [x] Reusable linear-regression function
 * [x] Eight hemisphere regression plots
-* [ ] Vacation destination filtering
-* [ ] Hotel search using Geoapify
-* [ ] Final vacation map
-* [ ] Final documentation review
+* [x] Vacation destination filtering
+* [x] Hotel search using Geoapify
+* [x] Final vacation map
+* [x] Final documentation review
 
+## Results and Findings
+
+WeatherPy retrieved current weather information for randomly generated cities around the world and examined how latitude relates to temperature, humidity, cloudiness, and wind speed.
+
+The regression analysis found:
+
+* Maximum temperature had the strongest relationship with latitude.
+* Northern Hemisphere temperatures generally decreased as latitude increased.
+* Southern Hemisphere temperatures generally increased as locations approached the equator.
+* Humidity, cloudiness, and wind speed showed little or no meaningful linear relationship with latitude in this dataset.
+
+VacationPy filtered the collected cities according to preferred weather conditions and used the Geoapify Places API to search for the nearest hotel within 10,000 meters of each qualifying city.
+
+## Interactive Vacation Map
+
+The final interactive map displays qualifying cities and their nearby hotels. Marker size represents humidity, and the hover information includes the city, country, humidity, and hotel name.
+
+[View or download the interactive vacation map](output_data/vacation_map.html)
+
+> The map requires an internet connection to load OpenStreetMap tiles.
+
+## Project Status
+
+The WeatherPy and VacationPy analyses are complete. The repository includes:
+
+* Live weather-data retrieval
+* Secure API-key management
+* Weather scatterplots
+* Northern and Southern Hemisphere regression analysis
+* Vacation-destination filtering
+* Geoapify hotel searches
+* Interactive city and hotel mapping
+* Standalone HTML map export
 ## Author
 
 Alberto Medina
